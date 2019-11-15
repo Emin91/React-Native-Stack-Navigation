@@ -1,10 +1,20 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Alert, Text, TouchableOpacity} from 'react-native'
+import {StyleSheet, View, Button, Text, TouchableOpacity} from 'react-native'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 
 class AppMain extends Component {
-
+  static navigationOptions = {
+    title: 'Page 1',
+    headerStyle: {
+      backgroundColor: '#00b8d9',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+      fontWeight: '100',
+    },
+  };
 	render() {
 		return (
       <View style={styles.container}>
@@ -22,7 +32,17 @@ class AppMain extends Component {
 } 
 
 class AppDetails extends Component {
-
+  static navigationOptions = {
+    title: 'Page 2',
+    headerStyle: {
+      backgroundColor: '#00b8d9',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+      fontWeight: '100',
+    },
+  };
 	render() {
 		return (
       <View style={styles.container}>
